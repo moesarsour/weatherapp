@@ -6,11 +6,14 @@ const [city, setCity] = useState('North Carolina');
 const [weather, setWeather] = useState();
 
 
-// open weather api fetch
-// need another api fetch for exact location 
-const fetchWeather = () => {
+// Possibly need another api fetch for exact location 
+
+
+// Handle Submit for Form and API call
+const handleSubmit = (e) => {
+  e.preventDefault();
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=YOUR_API_KEY_HERE&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=da7909f3bd9147727010ee30fe3df8ce&units=metric`
   )
     .then((res) => res.json())
     .then((data) => setWeather(data))
@@ -18,15 +21,8 @@ const fetchWeather = () => {
 };
 
 
-// Handle Submit for Form 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  fetchWeather();
-};
-
-
 return (
-<h1 className="py-4 text-5xl text-white font-serif">Search Weather</h1>,
+<h1 className="app py-4 text-5xl text-white font-serif">Search Weather</h1>,
  <div className="form">
         <form onSubmit={handleSubmit}>
           <input
@@ -41,6 +37,7 @@ return (
           </button>
         </form>
   </div>
+
   );
 }
 
