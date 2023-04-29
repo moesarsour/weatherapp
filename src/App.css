@@ -1,5 +1,12 @@
-.app{
-  background: url('./assets/bjark-DZ975EkUJH0-unsplash.jpg') center no-repeat;
+.app {
+  background: url("./assets/bjark-DZ975EkUJH0-unsplash.jpg")  no-repeat;
   background-size: cover;
   height: 100vh;
+  /* align-items: center; */
+  display: block;
 }
+
+h1{
+  justify-content: center;
+}
+
