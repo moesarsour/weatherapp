@@ -1,7 +1,6 @@
-import './App.css';
 import React from 'react';
 
-const App = () => {
+const Home = () => {
     return (
         <div className='homePage'>
             <div className='header'>
@@ -22,4 +21,4 @@ const App = () => {
     )
 }
 
-export default App;
+export default Home
