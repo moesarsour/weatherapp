@@ -6,6 +6,7 @@ import './App.css'
 const App = () => {
 
   return (
+      
      <div className='App'>
         <div className='header'>
            <h2>Weather Forcast</h2>
@@ -22,6 +23,7 @@ const App = () => {
           </form>
         </div>
      </div>
+   
   )
 }
 

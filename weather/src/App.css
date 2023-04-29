@@ -1,11 +1,21 @@
 .App {
-    left: 0;
+    left: 550px;
     line-height: 50px;
-    margin-top: -150px;
+    margin-top: 300px;
     position: absolute;
     text-align: center;
-    top: 45%;
-    width: 100%;
+    top: 35%;
+    width: 30%;
+    margin: auto;
+    border: 15px solid rgb(13, 159, 237);
+    border-radius: 25px;
+    background-color: rgb(13, 159, 237);
+    padding: 50px;
+    color: white;
+}
+
+body {
+    background-image: url(https://wallpapers.com/images/featured/mvehfqz6w2ges2dj.jpg);
 }
 
 
