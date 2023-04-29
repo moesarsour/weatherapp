@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 // import Comments from './components/comments'
 
 function App() {
-const [city, setCity] = useState('North Carolina');
+const [city, setCity] = useState('Cary');
 const [weather, setWeather] = useState();
 
 
@@ -14,7 +14,7 @@ const [weather, setWeather] = useState();
 const handleSubmit = (e) => {
   e.preventDefault();
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=da7909f3bd9147727010ee30fe3df8ce&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=da7909f3bd9147727010ee30fe3df8ce&units=imperial`
   )
     .then((res) => res.json())
     .then((data) => setWeather(data))
