@@ -14,6 +14,7 @@ const [weather, setWeather] = useState();
 const handleSubmit = (e) => {
   e.preventDefault();
   fetch(
+    // `http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={da7909f3bd9147727010ee30fe3df8ce}`
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=da7909f3bd9147727010ee30fe3df8ce&units=imperial`
   )
     .then((res) => res.json())
