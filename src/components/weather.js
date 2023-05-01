@@ -41,7 +41,8 @@ return (
   </div>
   
   {/* Displays Weather Data and grabs image of current weather condition  */}
-  {weather && (
+  {/* Starts with Logical and for Boolean */}
+  {weather && ( 
         <div className="card bg-blue-500 text-white w-[220px] h-[350px] flex flex-col justify-center items-center mt-10">
           <h4 className="text-2xl">{weather.name}</h4>
           <img
