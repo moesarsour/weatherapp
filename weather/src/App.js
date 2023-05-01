@@ -13,7 +13,7 @@ const App = () => {
         </div>
 
         <div className="instructions">
-           <p>Search City or Zip Code below.</p>
+           <p>Enter Zip Code below.</p>
         </div>
 
         <div className='zipcodeInput'>
