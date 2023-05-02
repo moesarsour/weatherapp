@@ -23,13 +23,25 @@ mongoose.connect(process.env.MONGO_URI,
   });
 
 // ROUTES
+app.get('/', (req,res) => {
+  
+})
 
 // CITY CONTROLLER
+
+// Schema
+const citySchema = new
 
 // 404 PAGE
 app.get('*', (req,res)=>{
     res.send('404')
 })
+
+// POST
+
+
+// GET
+
 
 // LISTEN
 app.listen(PORT, () =>{

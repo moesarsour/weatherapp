@@ -1,10 +1,12 @@
 import React from 'react'
 import {useState} from 'react'
+import '../App.css'
 
 
 function Weather () {
-const [city, setCity] = useState('Cary');
+const [city, setCity] = useState();
 const [weather, setWeather] = useState();
+// const getLocation
 
 
 // Possibly need another api fetch for exact location 
@@ -14,21 +16,21 @@ const [weather, setWeather] = useState();
 const handleSubmit = (e) => {
   e.preventDefault();
   fetch(
-    // `http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={da7909f3bd9147727010ee30fe3df8ce}`
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=da7909f3bd9147727010ee30fe3df8ce&units=imperial`
   )
     .then((res) => res.json())
     .then((data) => setWeather(data))
+    .then(data=>console.log(Math.round.weather.main.temp))
     .catch((error) => console.log(error.message));
 };
 
 
 return (
   // Form and search button 
-<div className='app'>
-  <h1 className="py-4 text-5xl text-white font-serif">Search Weather</h1>,
+<div className='justify-center items-center mt-10 ml-20 '>
+  <h1 className="py-4 text-5xl mr-10 text-white font-serif">Search Weather</h1>,
   <div className="form">
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='ml-2 '>
       <input
         type="text"
         placeholder="Enter city name"
@@ -44,7 +46,7 @@ return (
   {/* Displays Weather Data and grabs image of current weather condition  */}
   {/* Starts with Logical and for Boolean */}
   {weather && ( 
-        <div className="card bg-blue-500 text-white w-[220px] h-[350px] flex flex-col justify-center items-center mt-10">
+        <div className="card bg-blue-500 text-white w-[220px] h-[350px] flex flex-col justify-center items-center mt-10 mx-10">
           <h4 className="text-2xl">{weather.name}</h4>
           <img
             src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`}
@@ -52,10 +54,15 @@ return (
             className="w-[150px]"
           />
           <h2 className="text-5xl font-bold mb-2">{weather.main.temp}&deg;</h2>
-          <p>{weather.weather[0].main}</p>
+          
+          <p>Feels Like {weather.main.feels_like}&deg;</p>
+          <p>{weather.weather[0].description}</p>
+          <br/>
+          <p>Wind Speed: {weather.wind.speed} MPH</p>
+          <p>Humidity: {weather.main.humidity} % </p>
         </div>
-      )}
-    
+       
+      )}   
 </div>
 );
 }
