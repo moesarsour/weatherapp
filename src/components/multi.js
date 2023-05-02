@@ -1,12 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Multi ({api}) {
-    const [city, setCity] = useState();
-    const [weather, setWeather] = useState();
+function Multi () {
     return(
         <div>
-
+            <h1>5 Day for</h1>
         </div>
     )
 }
