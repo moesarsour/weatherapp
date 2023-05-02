@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './components/footer'
 import Weather from './components/weather'
 import Nav from './components/nav'
+// import Favorite from './components/favorite';
 
 
 
@@ -13,6 +14,7 @@ return (
      
       <Nav/>
        <><Weather />
+      
       <Footer /></>
     </div>
   </div>

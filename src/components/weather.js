@@ -20,7 +20,6 @@ const handleSubmit = (e) => {
   )
     .then((res) => res.json())
     .then((data) => setWeather(data))
-    .then(data=>console.log(Math.round.weather.main.temp))
     .catch((error) => console.log(error.message));
 };
 
@@ -53,12 +52,12 @@ return (
             alt=""
             className="w-[150px]"
           />
-          <h2 className="text-5xl font-bold mb-2">{weather.main.temp}&deg;</h2>
+          <h2 className="text-5xl font-bold mb-2">{Math.round(weather.main.temp)}&deg;</h2>
           
-          <p>Feels Like {weather.main.feels_like}&deg;</p>
+          <p>Feels Like {Math.round(weather.main.feels_like)}&deg;</p>
           <p>{weather.weather[0].description}</p>
           <br/>
-          <p>Wind Speed: {weather.wind.speed} MPH</p>
+          <p>Wind Speed: {Math.round(weather.wind.speed)} MPH</p>
           <p>Humidity: {weather.main.humidity} % </p>
         </div>
        
