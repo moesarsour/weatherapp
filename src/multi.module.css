@@ -1,0 +1,6 @@
+.multi {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-gap: 16px;
+    margin: 16px;
+  }

@@ -38,7 +38,9 @@ app.get('*', (req,res)=>{
 })
 
 // POST
-
+// app.post('/multi', (req,res)=>{
+//   res.render()
+// // })
 
 // GET
 
