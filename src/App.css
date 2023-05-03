@@ -3,8 +3,9 @@
   background-size: cover;
   height: 100vh;
   /* align-items: center; */
-  display: block;
+  display: block ;
 }
+
 
 h1{
   justify-content: center;
