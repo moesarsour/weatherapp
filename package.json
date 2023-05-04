@@ -14,7 +14,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -43,5 +43,10 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "description": "The inspiration for the creation of this weather app was from dev.to, providing a biolerplate for the weather app.\r Article: https://dev.to/coderamrin/how-to-build-a-weather-app-with-react-tailwind-css-2c7b",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

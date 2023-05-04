@@ -3,9 +3,13 @@ const { Schema } = mongoose
 
 // SCHEMA
 const citySchema  = new Schema({
-    name: {type: String}
+    name: {type: String, required: true},
 });
 
 citySchema.methods.getCity = function () {
-    // return weather info for said city 
+    return `${this.city}`
 }
+
+const City = mongoose.model('City', citySchema)
+
+module.exports = City
