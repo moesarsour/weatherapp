@@ -7,7 +7,7 @@ const citySchema  = new Schema({
             required: true}
 });
 
-citySchema.methods.getCity = function () => {
+citySchema.methods.getCity = function () {
     return `${this.city}`
 }
 
