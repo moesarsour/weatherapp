@@ -4,12 +4,9 @@ import '../App.css'
 
 
 function Weather () {
+
 const [city, setCity] = useState();
 const [weather, setWeather] = useState();
-// const getLocation
-
-
-// Possibly need another api fetch for exact location 
 
 
 // Handle Submit for Form and API call
