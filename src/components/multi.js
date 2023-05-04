@@ -5,7 +5,7 @@ import css from '../multi.module.css'
 function useOpenWeather ({apiKey, lat, lon, units = 'imperial'}) {
     const[apiData, setApiData] = useState(null);
 
-    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}e&units=${units}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
 
     useEffect(() => {
         fetch(apiUrl)
@@ -21,7 +21,7 @@ function useOpenWeather ({apiKey, lat, lon, units = 'imperial'}) {
 
 function Multi (lat, lon) {
     const weather = useOpenWeather({
-        apiKey:'&appid=da7909f3bd9147727010ee30fe3df8ce&units=imperial' ,
+        apiKey:'&appid=da7909f3bd9147727010ee30fe3df8ce' ,
         lat,
         lon,
         units: 'imperial'

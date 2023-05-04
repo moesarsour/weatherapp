@@ -30,7 +30,7 @@ app.get('/', (req,res) => {
 // CITY CONTROLLER
 
 // Schema
-const citySchema = new
+
 
 // 404 PAGE
 app.get('*', (req,res)=>{
