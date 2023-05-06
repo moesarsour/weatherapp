@@ -6,6 +6,6 @@ Article: https://dev.to/coderamrin/how-to-build-a-weather-app-with-react-tailwin
 The app has the ability to allow the user to look up the weather in different cities, as well as Create, Read, Update and Delete a list of their favorite cities.
 
 
-The user will have the ability to Log in using their email address and have the ability to stay logged in 
+Link to Deployed Project: https://weatherapp-six-iota.vercel.app/
 
 
