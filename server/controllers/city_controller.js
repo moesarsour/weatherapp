@@ -12,4 +12,4 @@ citySchema.methods.getCity = function () {
 
 const City = mongoose.model('City', citySchema)
 
-module.exports = City
+module.exports = City;

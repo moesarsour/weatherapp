@@ -2,6 +2,8 @@
 const express = require('express')
 const methodOverride = require('method-override')
 const mongoose = require('mongoose')
+const cors = require('cors');
+const City = require('./controllers/city_controller');
 
 // CONFIGURATION
 require('dotenv').config()
@@ -12,6 +14,7 @@ const app = express()
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
 app.use(methodOverride('_method'))
+app.use(cors());
 mongoose.connect(process.env.MONGO_URI, 
   {
     useNewUrlParser: true, 
@@ -23,14 +26,14 @@ mongoose.connect(process.env.MONGO_URI,
   });
 
 // ROUTES
-app.get('/', (req,res) => {
-  
+app.get('/home', (req,res) => {
+  res.send('yippie ki yay mother f*****')
 })
 
 // CITY CONTROLLER
 
 // Schema
-const citySchema = new
+const city = new City;
 
 // 404 PAGE
 app.get('*', (req,res)=>{
