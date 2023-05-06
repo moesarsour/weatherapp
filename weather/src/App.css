@@ -1,4 +1,7 @@
-.App {
+.app {
+    background: url(https://wallpapers.com/images/featured/mvehfqz6w2ges2dj.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
     left: 650px;
     line-height: 50px;
     margin-top: 300px;
@@ -14,9 +17,7 @@
     color: white;
 }
 
-body {
-    background-image: url(https://wallpapers.com/images/featured/mvehfqz6w2ges2dj.jpg);
-}
+
 
 
 
