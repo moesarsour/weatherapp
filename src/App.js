@@ -5,7 +5,6 @@ import Weather from './components/weather'
 import Footer from './components/footer'
 import New from './components/new'
 import Favorite from './components/favorite';
-import Multi from './components/multi'
 
 
 
@@ -18,7 +17,6 @@ return (
         <Route path ='/' element={<Weather/>}/>
         <Route path ='/new' element={<New/>}/>
         <Route path ='/favorite' element={<Favorite/>}/>
-        <Route path ='/multi' element={<Multi/>}/>
     </Routes>
       <Footer/>
 
